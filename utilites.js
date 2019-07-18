@@ -3,7 +3,7 @@ var httpPortNumber;
 var httpsPortNumber;
 
 function getPort(){
-	alert("seeking port")
+	
 
 	var portXhr = new XMLHttpRequest();
 
@@ -17,8 +17,7 @@ function getPort(){
 
 		httpsPortNumber= doc.getElementsByTagName("node-port-https").item(0).textContent;
 
-		console.log("Port : " + httpPortNumber);
-
+		alert("Port : " + httpPortNumber);
 		});
 
 
